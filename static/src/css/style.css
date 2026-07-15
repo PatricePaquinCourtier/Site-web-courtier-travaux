@@ -173,8 +173,8 @@ form{background:var(--white);border:1px solid var(--hair);border-radius:16px;pad
   .steps{grid-template-columns:repeat(2,1fr)}
   .services{grid-template-columns:repeat(2,1fr)}
   .gallery{grid-template-columns:1fr}
-  .menu{position:fixed;inset:var(--nav-h) 0 auto 0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--hair);padding:10px 28px 20px;transform:translateY(-130%);transition:transform .35s ease}
-  .menu.open{transform:none}
+  .menu{position:fixed;inset:0 0 auto 0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--hair);padding:10px 28px 20px;transform:translateY(-100%);transition:transform .35s ease}
+  .menu.open{transform:translateY(var(--nav-h))}
   .menu a{padding:14px 4px;border-radius:0;border-bottom:1px solid var(--hair)}
   .menu a::after{display:none}
   .burger{display:block}
